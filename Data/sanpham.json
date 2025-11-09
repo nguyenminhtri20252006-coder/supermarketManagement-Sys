@@ -1,0 +1,44 @@
+[
+  {
+    "MaSP": "SP001",
+    "TenSP": "Sữa tươi Vinamilk",
+    "DonViTinh": "Hộp",
+    "GiaBan": 30000,
+    "SoLuongTonKho": 100
+  },
+  {
+    "MaSP": "SP002",
+    "TenSP": "Bánh mì ngọt",
+    "DonViTinh": "Cái",
+    "GiaBan": 5000,
+    "SoLuongTonKho": 200
+  },
+  {
+    "MaSP": "SP003",
+    "TenSP": "Nước suối Aquafina",
+    "DonViTinh": "Chai",
+    "GiaBan": 6000,
+    "SoLuongTonKho": 15
+  },
+  {
+    "MaSP": "SP004",
+    "TenSP": "Thịt bò Kobe",
+    "DonViTinh": "Kg",
+    "GiaBan": 500000,
+    "SoLuongTonKho": 20
+  },
+  {
+    "MaSP": "SP005",
+    "TenSP": "Táo Mỹ",
+    "DonViTinh": "Kg",
+    "GiaBan": 80000,
+    "SoLuongTonKho": 150
+  },
+  {
+    "MaSP": "SP006",
+    "TenSP": "băng vệ sinh",
+    "DonViTinh": "10 hộp",
+    "GiaBan": 500000000,
+    "SoLuongTonKho": 1000
+  }
+]
