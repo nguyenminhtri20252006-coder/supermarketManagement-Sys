@@ -50,7 +50,7 @@ public static class Program
         {
             "1. Quản lý Sản phẩm (CRUD)",
             "2. Liệt kê Combo Tết (Thuật toán)",
-            "3. Kiểm thử hiệu năng (Unit Test)",
+            "3. Kiểm thử hiệu năng (So sánh CTDL)", // Đã cập nhật văn bản
             "0. Thoát và Lưu"
         };
 

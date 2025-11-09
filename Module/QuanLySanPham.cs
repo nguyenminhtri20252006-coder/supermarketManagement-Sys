@@ -352,16 +352,16 @@ public static class QuanLySanPham
         HienThiChiTietSanPham(spCu);
         Console.WriteLine("\nNhập thông tin mới (Nhấn Enter để giữ nguyên giá trị cũ, Esc để hủy):");
 
-        string? tenMoi = ConsoleUI.DocChuoi($"1. Tên Sản phẩm ({spCu.TenSP}): ", spCu.TenSP, false);
+        string? tenMoi = ConsoleUI.DocChuoi($"1. Tên Sản phẩm ({spCu.TenSP}) : ", spCu.TenSP, false);
         if (tenMoi == null) return;
 
-        string? dvtMoi = ConsoleUI.DocChuoi($"2. Đơn vị tính ({spCu.DonViTinh}): ", spCu.DonViTinh, false);
+        string? dvtMoi = ConsoleUI.DocChuoi($"2. Đơn vị tính ({spCu.DonViTinh}) : ", spCu.DonViTinh, false);
         if (dvtMoi == null) return;
 
-        decimal? giaMoi = ConsoleUI.DocSoThapPhan($"3. Giá bán ({spCu.GiaBan:N0}): ", spCu.GiaBan);
+        decimal? giaMoi = ConsoleUI.DocSoThapPhan($"3. Giá bán ({spCu.GiaBan:N0}) : ", spCu.GiaBan);
         if (giaMoi == null) return;
 
-        int? slMoi = ConsoleUI.DocSoNguyen($"4. Số lượng tồn ({spCu.SoLuongTonKho}): ", spCu.SoLuongTonKho);
+        int? slMoi = ConsoleUI.DocSoNguyen($"4. Số lượng tồn ({spCu.SoLuongTonKho}) : ", spCu.SoLuongTonKho);
         if (slMoi == null) return;
 
         if (ConsoleUI.XacNhan("Bạn có chắc chắn muốn cập nhật?"))

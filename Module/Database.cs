@@ -48,15 +48,12 @@ public static class Database
 
                 foreach (var sp in sanPhams)
                 {
-                    // --- BẮT ĐẦU SỬA LỖI (Yêu cầu 3) ---
-                    // Kiểm tra (Validate) dữ liệu null trước khi Add
-                    // Nếu MaSP hoặc TenSP bị null, chúng ta không thể lập index.
+        
                     if (string.IsNullOrEmpty(sp.MaSP) || string.IsNullOrEmpty(sp.TenSP))
                     {
                         soDongBiLoi++;
                         continue; // Bỏ qua sản phẩm bị lỗi này
                     }
-                    // --- KẾT THÚC SỬA LỖI ---
 
                     // 4.1. Nạp vào dsTheoMa
                     if (!QuanLySanPham.dsTheoMa.ContainsKey(sp.MaSP))

@@ -12,3 +12,4 @@ D:\csharpspace\Prj SuperMarketManageSys\v3\DuAnBaoCao_CSDL_Sieuthi\obj\Debug\net
 D:\csharpspace\Prj SuperMarketManageSys\v3\DuAnBaoCao_CSDL_Sieuthi\obj\Debug\net9.0\DuAnBaoCao_CSDL_Sieuthi.pdb
 D:\csharpspace\Prj SuperMarketManageSys\v3\DuAnBaoCao_CSDL_Sieuthi\obj\Debug\net9.0\DuAnBaoCao_CSDL_Sieuthi.genruntimeconfig.cache
 D:\csharpspace\Prj SuperMarketManageSys\v3\DuAnBaoCao_CSDL_Sieuthi\obj\Debug\net9.0\ref\DuAnBaoCao_CSDL_Sieuthi.dll
+D:\csharpspace\Prj SuperMarketManageSys\v3\DuAnBaoCao_CSDL_Sieuthi\obj\Debug\net9.0\DuAnBaoCao_CSDL_Sieuthi.sourcelink.json

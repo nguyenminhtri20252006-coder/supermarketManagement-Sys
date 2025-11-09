@@ -6,6 +6,7 @@ using System.Linq; // Cần cho ToList()
 /// <summary>
 /// Module (static class) chịu trách nhiệm thực hiện Yêu cầu 3:
 /// Thực nghiệm và Kiểm thử hiệu năng của Cấu trúc Dữ liệu và Thuật toán.
+/// (ĐÃ CẬP NHẬT: So sánh Dictionary vs List)
 /// </summary>
 public static class KiemThu
 {
@@ -18,7 +19,8 @@ public static class KiemThu
         bool dangChay = true;
         var cacLuaChon = new List<string>
         {
-            "1. Kiểm thử Cấu trúc Dữ liệu (Thêm, Tìm, Xóa 10.000 SP)",
+            // Đã cập nhật tên
+            "1. So sánh hiệu năng CTDL (Dictionary O(1) vs List O(N))",
             "2. Kiểm thử Thuật toán Combo (Tổ hợp C(n, m))",
             "0. Quay lại Menu chính"
         };
@@ -30,7 +32,7 @@ public static class KiemThu
             switch (luaChonIndex)
             {
                 case 0: // 1. Kiểm thử CTDL
-                    KiemThuHieuNang_CTDL();
+                    KiemThuHieuNang_CTDL_SoSanh(); // Gọi hàm so sánh mới
                     break;
                 case 1: // 2. Kiểm thử Combo
                     KiemThuHieuNang_Combo();
@@ -46,77 +48,137 @@ public static class KiemThu
     }
 
     /// <summary>
-    /// (Yêu cầu 3) - Thực nghiệm hiệu năng của 2-Dictionary.
+    /// (Yêu cầu 3 - Nâng cao) - Thực nghiệm so sánh hiệu năng của
+    /// 2-Dictionary (O(1)) với List (O(N)).
     /// </summary>
-    private static void KiemThuHieuNang_CTDL()
+    private static void KiemThuHieuNang_CTDL_SoSanh()
     {
         Console.Clear();
-        Console.WriteLine("== ĐANG CHUẨN BỊ KIỂM THỬ CẤU TRÚC DỮ LIỆU ==");
-        Console.WriteLine("Thử nghiệm sẽ Thêm, Tìm, Xóa trên 2 Dictionaries đồng bộ.");
-
-        int SO_LUONG_TEST = 10000; // Thử nghiệm với 10.000 mặt hàng
-
-        if (!ConsoleUI.XacNhan($"Chuẩn bị chạy kiểm thử với {SO_LUONG_TEST:N0} sản phẩm?"))
+        Console.WriteLine("== SO SÁNH HIỆU NĂNG CTDL (Dictionary vs List) ==");
+        
+        int? soLuongTest = ConsoleUI.DocSoNguyen("Nhập số lượng (N) sản phẩm để kiểm thử (VD: 10000): ");
+        if (soLuongTest == null || soLuongTest <= 0)
         {
             ConsoleUI.HienThiThongBao("Đã hủy kiểm thử.", ConsoleColor.Yellow);
             return;
         }
 
+        int N = soLuongTest.Value;
+        Console.WriteLine($"Đang chuẩn bị {N:N0} dữ liệu mẫu...");
+
         // Tạo dữ liệu mẫu
         List<SanPham> duLieuTest = new List<SanPham>();
-        for (int i = 0; i < SO_LUONG_TEST; i++)
+        for (int i = 0; i < N; i++)
         {
             duLieuTest.Add(new SanPham($"TEST{i:D5}", $"Sản phẩm Test {i}", "Cái", 100, 10));
         }
-        string maCanTim = $"TEST{SO_LUONG_TEST / 2:D5}"; // Lấy mã ở giữa
-        string tenCanTim = $"sản phẩm test {SO_LUONG_TEST / 3:D5}"; // Lấy tên ở 1/3
+        string maCanTim = $"TEST{N / 2:D5}"; // Lấy mã ở giữa
+        string tenCanTim = $"sản phẩm test {N / 3:D5}"; // Lấy tên ở 1/3
+        string tenKhongTimThay = "ten_khong_ton_tai";
+
+        // Xóa dữ liệu cũ (nếu có)
+        QuanLySanPham.dsTheoMa.Clear();
+        QuanLySanPham.dsTheoTen.Clear();
+        QuanLySanPham_List.XoaTatCa();
 
         // Khởi tạo đồng hồ
         Stopwatch sw = new Stopwatch();
 
-        // 1. Kiểm thử THÊM
-        Console.WriteLine($"\n1. Đang kiểm thử Thêm {SO_LUONG_TEST:N0} sản phẩm (O(1) x N)...");
+        // Bảng kết quả (dùng List<string> để dễ định dạng)
+        var ketQua = new List<Tuple<string, string, string>>();
+
+        // 1. Kiểm thử THÊM (O(1) vs O(1))
+        Console.WriteLine($"\n1. Đang kiểm thử Thêm {N:N0} sản phẩm...");
         sw.Start();
         foreach (var sp in duLieuTest)
         {
-            QuanLySanPham.ThemSanPham(sp);
+            QuanLySanPham.ThemSanPham(sp); // Dictionary (O(1))
         }
         sw.Stop();
-        Console.WriteLine($"   -> Hoàn thành trong: {sw.ElapsedMilliseconds} ms");
+        string thoiGianDict_Them = $"{sw.Elapsed.TotalMilliseconds:F4} ms";
 
-        // 2. Kiểm thử TÌM THEO MÃ (O(1))
-        Console.WriteLine($"\n2. Đang kiểm thử Tìm theo Mã (O(1)) (Tìm '{maCanTim}')...");
-        sw.Restart();
-        QuanLySanPham.TimTheoMa(maCanTim, out _);
-        sw.Stop();
-        Console.WriteLine($"   -> Hoàn thành trong: {sw.Elapsed.TotalMilliseconds:F4} ms (hoặc {sw.ElapsedTicks} ticks)");
-
-        // 3. Kiểm thử TÌM THEO TÊN (O(1))
-        Console.WriteLine($"\n3. Đang kiểm thử Tìm theo Tên (O(1)) (Tìm '{tenCanTim}')...");
-        sw.Restart();
-        QuanLySanPham.TimTheoTen(tenCanTim);
-        sw.Stop();
-        Console.WriteLine($"   -> Hoàn thành trong: {sw.Elapsed.TotalMilliseconds:F4} ms (hoặc {sw.ElapsedTicks} ticks)");
-        
-        // 4. Kiểm thử TÌM THEO TÊN (Không tồn tại - O(1))
-        Console.WriteLine($"\n4. Đang kiểm thử Tìm Tên không tồn tại (O(1))...");
-        sw.Restart();
-        QuanLySanPham.TimTheoTen("ten_khong_ton_tai");
-        sw.Stop();
-        Console.WriteLine($"   -> Hoàn thành trong: {sw.Elapsed.TotalMilliseconds:F4} ms (hoặc {sw.ElapsedTicks} ticks)");
-
-        // 5. Kiểm thử XÓA
-        Console.WriteLine($"\n5. Đang kiểm thử Xóa {SO_LUONG_TEST:N0} sản phẩm (O(1) x N)...");
         sw.Restart();
         foreach (var sp in duLieuTest)
         {
-            QuanLySanPham.XoaSanPham(sp.MaSP);
+            QuanLySanPham_List.ThemSanPham(sp); // List.Add (O(1))
         }
         sw.Stop();
-        Console.WriteLine($"   -> Hoàn thành trong: {sw.ElapsedMilliseconds} ms");
+        string thoiGianList_Them = $"{sw.Elapsed.TotalMilliseconds:F4} ms";
+        ketQua.Add(Tuple.Create($"Thêm {N:N0} SP (Tổng)", thoiGianDict_Them, thoiGianList_Them));
+
+
+        // 2. Kiểm thử TÌM THEO MÃ (O(1) vs O(N))
+        Console.WriteLine($"\n2. Đang kiểm thử Tìm theo Mã (O(1) vs O(N))...");
+        sw.Restart();
+        QuanLySanPham.TimTheoMa(maCanTim, out _);
+        sw.Stop();
+        string thoiGianDict_TimMa = $"{sw.Elapsed.TotalMilliseconds:F4} ms ({sw.ElapsedTicks} ticks)";
+
+        sw.Restart();
+        QuanLySanPham_List.TimTheoMa(maCanTim, out _);
+        sw.Stop();
+        string thoiGianList_TimMa = $"{sw.Elapsed.TotalMilliseconds:F4} ms ({sw.ElapsedTicks} ticks)";
+        ketQua.Add(Tuple.Create("Tìm Mã (Tồn tại)", thoiGianDict_TimMa, thoiGianList_TimMa));
+
+        // 3. Kiểm thử TÌM THEO TÊN (O(1) vs O(N))
+        Console.WriteLine($"\n3. Đang kiểm thử Tìm theo Tên (O(1) vs O(N))...");
+        sw.Restart();
+        QuanLySanPham.TimTheoTen(tenCanTim);
+        sw.Stop();
+        string thoiGianDict_TimTen = $"{sw.Elapsed.TotalMilliseconds:F4} ms ({sw.ElapsedTicks} ticks)";
+
+        sw.Restart();
+        QuanLySanPham_List.TimTheoTen(tenCanTim);
+        sw.Stop();
+        string thoiGianList_TimTen = $"{sw.Elapsed.TotalMilliseconds:F4} ms ({sw.ElapsedTicks} ticks)";
+        ketQua.Add(Tuple.Create("Tìm Tên (Tồn tại)", thoiGianDict_TimTen, thoiGianList_TimTen));
+        
+        // 4. Kiểm thử TÌM TÊN (Không tồn tại - O(1) vs O(N))
+        Console.WriteLine($"\n4. Đang kiểm thử Tìm Tên (Không tồn tại)...");
+        sw.Restart();
+        QuanLySanPham.TimTheoTen(tenKhongTimThay);
+        sw.Stop();
+        string thoiGianDict_TimTenFail = $"{sw.Elapsed.TotalMilliseconds:F4} ms ({sw.ElapsedTicks} ticks)";
+
+        sw.Restart();
+        QuanLySanPham_List.TimTheoTen(tenKhongTimThay);
+        sw.Stop();
+        string thoiGianList_TimTenFail = $"{sw.Elapsed.TotalMilliseconds:F4} ms ({sw.ElapsedTicks} ticks)";
+        ketQua.Add(Tuple.Create("Tìm Tên (Không thấy)", thoiGianDict_TimTenFail, thoiGianList_TimTenFail));
+
+        // 5. Kiểm thử XÓA (O(1) vs O(N))
+        Console.WriteLine($"\n5. Đang kiểm thử Xóa {N:N0} sản phẩm...");
+        sw.Restart();
+        foreach (var sp in duLieuTest)
+        {
+            QuanLySanPham.XoaSanPham(sp.MaSP); // Dictionary (O(1))
+        }
+        sw.Stop();
+        string thoiGianDict_Xoa = $"{sw.Elapsed.TotalMilliseconds:F4} ms";
+
+        sw.Restart();
+        foreach (var sp in duLieuTest)
+        {
+            QuanLySanPham_List.XoaSanPham(sp.MaSP); // List (O(N) để tìm + O(N) để xóa)
+        }
+        sw.Stop();
+        string thoiGianList_Xoa = $"{sw.Elapsed.TotalMilliseconds:F4} ms";
+        ketQua.Add(Tuple.Create($"Xóa {N:N0} SP (Tổng)", thoiGianDict_Xoa, thoiGianList_Xoa));
+        
+        // 6. In Bảng Kết Quả
+        Console.Clear();
+        Console.WriteLine($"== BẢNG KẾT QUẢ SO SÁNH HIỆU NĂNG (N = {N:N0}) ==");
+        Console.WriteLine();
+        Console.WriteLine($"| {"Phép toán", -25} | {"Dictionary (Tối ưu)", -25} | {"List (Cơ bản)", -25} |");
+        Console.WriteLine($"| {new string('-', 25)} | {new string('-', 25)} | {new string('-', 25)} |");
+        
+        foreach (var (phepToan, dict, list) in ketQua)
+        {
+            Console.WriteLine($"| {phepToan, -25} | {dict, -25} | {list, -25} |");
+        }
         
         Console.WriteLine("\n--- KẾT THÚC KIỂM THỬ CTDL ---");
-        ConsoleUI.HienThiThongBao("Kiểm thử hoàn tất. Kết quả cho thấy các thao tác O(1) (Tìm kiếm) nhanh hơn đáng kể so với O(N) (Thêm/Xóa).", ConsoleColor.Green);
+        ConsoleUI.HienThiThongBao("Kiểm thử hoàn tất. Kết quả 'ticks' cho thấy phép toán O(1) của Dictionary nhanh hơn đáng kể so với O(N) của List.", ConsoleColor.Green);
     }
 
     /// <summary>
