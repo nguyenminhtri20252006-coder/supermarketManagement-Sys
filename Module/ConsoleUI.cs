@@ -308,10 +308,10 @@ public static class ConsoleUI
         Console.Write(loiNhac);
 
         // Hiển thị giá trị mặc định (nếu có)
-        var buffer = new StringBuilder(giaTriMacDinh);
-        Console.Write(giaTriMacDinh);
+        var buffer = new StringBuilder();
+       
         
-        int viTriConTro = buffer.Length;
+        int viTriConTro = 0;
         // Lưu vị trí con trỏ ban đầu
         int left = Console.CursorLeft;
         int top = Console.CursorTop;
@@ -323,15 +323,31 @@ public static class ConsoleUI
 
             if (key.Key == ConsoleKey.Enter)
             {
-                if (batBuoc && buffer.Length == 0)
+                // --- LOGIC ĐÃ SỬA ---
+                if (buffer.Length == 0) // Nếu người dùng không nhập gì
                 {
-                    // Nếu bắt buộc nhưng lại nhập rỗng, không cho qua
+                    if (batBuoc)
+                    {
+                        // Nếu bắt buộc -> Báo lỗi
                     Console.SetCursorPosition(0, top + 1);
                     HienThiThongBao("Trường này là bắt buộc, không được để trống!", ConsoleColor.Red);
-                    Console.SetCursorPosition(left, top);
-                    Console.Write(new string(' ', Console.WindowWidth - left)); // Xóa dòng
-                    Console.SetCursorPosition(left, top);
-                    viTriConTro = 0;
+                        
+                        // Vẽ lại dòng nhắc (để xóa thông báo lỗi nếu nó đè lên)
+                        Console.SetCursorPosition(0, top);
+                        Console.Write(new string(' ', Console.WindowWidth)); // Xóa dòng
+                        Console.SetCursorPosition(0, top);
+                        Console.Write(loiNhac);
+                        left = Console.CursorLeft; // Cập nhật lại 'left'
+                        
+                        // RedrawBuffer(left, top, buffer.ToString(), viTriConTro);
+                    }
+                    else
+                    {
+                        // Nếu không bắt buộc -> Chấp nhận giá trị mặc định (có thể là "" hoặc giá trị cũ)
+                        Console.WriteLine();
+                        Console.CursorVisible = false;
+                        return giaTriMacDinh; 
+                    }
                 }
                 else
                 {

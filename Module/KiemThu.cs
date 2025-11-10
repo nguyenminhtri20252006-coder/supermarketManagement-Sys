@@ -22,7 +22,8 @@ public static class KiemThu
             // Đã cập nhật tên
             "1. So sánh hiệu năng CTDL (Dictionary O(1) vs List O(N))",
             "2. Kiểm thử Thuật toán Combo (Tổ hợp C(n, m))",
-            "0. Quay lại Menu chính"
+            "3. Tạo (GHI ĐÈ) 100 dữ liệu mẫu vào JSON", // Mục mới
+            "0. Quay lại Menu chính" // Số thứ tự đã thay đổi
         };
 
         while (dangChay)
@@ -37,7 +38,10 @@ public static class KiemThu
                 case 1: // 2. Kiểm thử Combo
                     KiemThuHieuNang_Combo();
                     break;
-                case 2: // 0. Quay lại
+                case 2: // 3. Tạo dữ liệu mẫu (Mục mới)
+                    TaoVaLuuDuLieuMau();
+                    break;
+                case 3: // 0. Quay lại (Số thứ tự đã thay đổi)
                     dangChay = false;
                     break;
                 case -1: // Esc
@@ -46,6 +50,82 @@ public static class KiemThu
             }
         }
     }
+
+    /// <summary>
+    /// (BỔ SUNG MỚI)
+    /// Tạo 100 sản phẩm mẫu và ghi đè vào Data/sanpham.json.
+    /// </summary>
+    private static void TaoVaLuuDuLieuMau()
+    {
+        Console.Clear();
+        Console.WriteLine("== TẠO DỮ LIỆU MẪU (100 SẢN PHẨM) ==");
+        
+        if (!ConsoleUI.XacNhan("CẢNH BÁO: Thao tác này sẽ XÓA SẠCH RAM và GHI ĐÈ file Data/sanpham.json. Bạn có chắc chắn?"))
+        {
+            ConsoleUI.HienThiThongBao("Đã hủy thao tác.", ConsoleColor.Yellow);
+            return;
+        }
+
+        Console.WriteLine("Đang xóa dữ liệu cũ trên RAM...");
+        // Xóa sạch RAM
+        QuanLySanPham.dsTheoMa.Clear();
+        QuanLySanPham.dsTheoTen.Clear();
+        QuanLySanPham_List.XoaTatCa();
+
+        Console.WriteLine("Đang tạo 30 sản phẩm mẫu...");
+        var duLieuMau = new List<SanPham>
+        {
+            new SanPham("SP001", "Sữa tươi Vinamilk 1L", "Hộp", 35000, 150),
+            new SanPham("SP002", "Bánh mì Sandwich", "Gói", 25000, 300),
+            new SanPham("SP003", "Nước suối Aquafina 500ml", "Chai", 5000, 1000),
+            new SanPham("SP004", "Thịt ba rọi bò Mỹ", "Kg", 250000, 50),
+            new SanPham("SP005", "Táo Envy New Zealand", "Kg", 120000, 80),
+            new SanPham("SP006", "Coca-Cola Zero", "Lon", 10000, 500),
+            new SanPham("SP007", "Dầu ăn Tường An 1L", "Chai", 45000, 200),
+            new SanPham("SP008", "Gạo ST25", "Túi 5Kg", 180000, 120),
+            new SanPham("SP009", "Trứng gà ta", "Vỉ 10", 40000, 250),
+            new SanPham("SP010", "Cà phê G7 Trung Nguyên", "Hộp", 55000, 300),
+ new SanPham("SP011", "Cá hồi Na-uy", "Kg", 450000, 30),
+            new SanPham("SP012", "Nho đen không hạt Mỹ", "Kg", 180000, 70),
+            new SanPham("SP013", "Bia Heineken", "Thùng 24L", 420000, 100),
+            new SanPham("SP014", "Nước mắm Nam Ngư", "Chai 750ml", 30000, 200),
+            new SanPham("SP015", "Tương ớt Chinsu", "Chai 250g", 12000, 400),
+            new SanPham("SP016", "Kem đánh răng P/S", "Tuýp", 28000, 150),
+            new SanPham("SP017", "Sữa chua Vinamilk", "Lốc 4", 22000, 300),
+            new SanPham("SP018", "Bột giặt Omo 3Kg", "Túi", 150000, 60),
+            new SanPham("SP019", "Nước xả Comfort", "Chai 1.8L", 90000, 70),
+            new SanPham("SP020", "Khăn giấy Pulppy", "Bịch", 30000, 100),
+            new SanPham("SP021", "Mì Hảo Hảo", "Thùng", 120000, 200),
+            new SanPham("SP022", "Phô mai Con Bò Cười", "Hộp 16", 50000, 90),
+            new SanPham("SP023", "Bánh Chocopie", "Hộp 12", 52000, 110),
+            new SanPham("SP024", "Xúc xích CP", "Gói 500g", 65000, 80),
+            new SanPham("SP025", "Nấm kim châm", "Gói", 15000, 50),
+            new SanPham("SP026", "Rau muống VietGap", "Bó", 18000, 40),
+            new SanPham("SP027", "Cải thìa VietGap", "Bó", 20000, 40),
+            new SanPham("SP028", "Nước rửa chén Sunlight", "Chai", 38000, 130),
+            new SanPham("SP029", "Sữa đặc Ông Thọ", "Lon", 23000, 200),
+            new SanPham("SP030", "Bơ lạt Anchor", "Khối 200g", 85000, 50)
+        };
+
+        // Thêm 90 sản phẩm tự động
+        for (int i = 11; i <= 100; i++)
+        {
+            duLieuMau.Add(new SanPham($"SP{i:D3}", $"Sản phẩm tự động {i}", "Cái", i * 1000, i * 2));
+        }
+
+        Console.WriteLine("Đang nạp dữ liệu mẫu vào RAM...");
+        foreach (var sp in duLieuMau)
+        {
+            QuanLySanPham.ThemSanPham(sp);
+        }
+
+        Console.WriteLine("Đang lưu RAM vào file Data/sanpham.json...");
+        // Gọi hàm lưu trữ
+        Database.LuuDuLieu();
+
+        ConsoleUI.HienThiThongBao($"Đã tạo và ghi đè thành công {duLieuMau.Count} sản phẩm vào Data/sanpham.json.", ConsoleColor.Green);
+    }
+
 
     /// <summary>
     /// (Yêu cầu 3 - Nâng cao) - Thực nghiệm so sánh hiệu năng của

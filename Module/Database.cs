@@ -38,13 +38,14 @@ public static class Database
             var sanPhams = JsonSerializer.Deserialize<List<SanPham>>(jsonString);
 
             // 3. Xóa dữ liệu cũ trên RAM (nếu có)
-            QuanLySanPham.dsTheoMa.Clear();
-            QuanLySanPham.dsTheoTen.Clear();
+            
 
             // 4. Nạp dữ liệu mới vào 2 Dictionary (Yêu cầu 2.1)
-            if (sanPhams != null)
+            if (sanPhams != null  && sanPhams.Count > 0)
             {
                 int soDongBiLoi = 0; // (BỔ SUNG) Biến đếm lỗi
+                QuanLySanPham.dsTheoMa.Clear();
+            QuanLySanPham.dsTheoTen.Clear();
 
                 foreach (var sp in sanPhams)
                 {

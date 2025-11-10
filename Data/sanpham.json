@@ -1,1 +1,702 @@
-[]
+[
+  {
+    "MaSP": "SP001",
+    "TenSP": "Sữa tươi Vinamilk 1L",
+    "DonViTinh": "Hộp",
+    "GiaBan": 35000,
+    "SoLuongTonKho": 150
+  },
+  {
+    "MaSP": "SP002",
+    "TenSP": "Bánh mì Sandwich",
+    "DonViTinh": "Gói",
+    "GiaBan": 25000,
+    "SoLuongTonKho": 300
+  },
+  {
+    "MaSP": "SP003",
+    "TenSP": "Nước suối Aquafina 500ml",
+    "DonViTinh": "Chai",
+    "GiaBan": 5000,
+    "SoLuongTonKho": 1000
+  },
+  {
+    "MaSP": "SP004",
+    "TenSP": "Thịt ba rọi bò Mỹ",
+    "DonViTinh": "Kg",
+    "GiaBan": 250000,
+    "SoLuongTonKho": 50
+  },
+  {
+    "MaSP": "SP005",
+    "TenSP": "Táo Envy New Zealand",
+    "DonViTinh": "Kg",
+    "GiaBan": 120000,
+    "SoLuongTonKho": 80
+  },
+  {
+    "MaSP": "SP006",
+    "TenSP": "Coca-Cola Zero",
+    "DonViTinh": "Lon",
+    "GiaBan": 10000,
+    "SoLuongTonKho": 500
+  },
+  {
+    "MaSP": "SP007",
+    "TenSP": "Dầu ăn Tường An 1L",
+    "DonViTinh": "Chai",
+    "GiaBan": 45000,
+    "SoLuongTonKho": 200
+  },
+  {
+    "MaSP": "SP008",
+    "TenSP": "Gạo ST25",
+    "DonViTinh": "Túi 5Kg",
+    "GiaBan": 180000,
+    "SoLuongTonKho": 120
+  },
+  {
+    "MaSP": "SP009",
+    "TenSP": "Trứng gà ta",
+    "DonViTinh": "Vỉ 10",
+    "GiaBan": 40000,
+    "SoLuongTonKho": 250
+  },
+  {
+    "MaSP": "SP010",
+    "TenSP": "Cà phê G7 Trung Nguyên",
+    "DonViTinh": "Hộp",
+    "GiaBan": 55000,
+    "SoLuongTonKho": 300
+  },
+  {
+    "MaSP": "SP011",
+    "TenSP": "Cá hồi Na-uy",
+    "DonViTinh": "Kg",
+    "GiaBan": 450000,
+    "SoLuongTonKho": 30
+  },
+  {
+    "MaSP": "SP012",
+    "TenSP": "Nho đen không hạt Mỹ",
+    "DonViTinh": "Kg",
+    "GiaBan": 180000,
+    "SoLuongTonKho": 70
+  },
+  {
+    "MaSP": "SP013",
+    "TenSP": "Bia Heineken",
+    "DonViTinh": "Thùng 24L",
+    "GiaBan": 420000,
+    "SoLuongTonKho": 100
+  },
+  {
+    "MaSP": "SP014",
+    "TenSP": "Nước mắm Nam Ngư",
+    "DonViTinh": "Chai 750ml",
+    "GiaBan": 30000,
+    "SoLuongTonKho": 200
+  },
+  {
+    "MaSP": "SP015",
+    "TenSP": "Tương ớt Chinsu",
+    "DonViTinh": "Chai 250g",
+    "GiaBan": 12000,
+    "SoLuongTonKho": 400
+  },
+  {
+    "MaSP": "SP016",
+    "TenSP": "Kem đánh răng P/S",
+    "DonViTinh": "Tuýp",
+    "GiaBan": 28000,
+    "SoLuongTonKho": 150
+  },
+  {
+    "MaSP": "SP017",
+    "TenSP": "Sữa chua Vinamilk",
+    "DonViTinh": "Lốc 4",
+    "GiaBan": 22000,
+    "SoLuongTonKho": 300
+  },
+  {
+    "MaSP": "SP018",
+    "TenSP": "Bột giặt Omo 3Kg",
+    "DonViTinh": "Túi",
+    "GiaBan": 150000,
+    "SoLuongTonKho": 60
+  },
+  {
+    "MaSP": "SP019",
+    "TenSP": "Nước xả Comfort",
+    "DonViTinh": "Chai 1.8L",
+    "GiaBan": 90000,
+    "SoLuongTonKho": 70
+  },
+  {
+    "MaSP": "SP020",
+    "TenSP": "Khăn giấy Pulppy",
+    "DonViTinh": "Bịch",
+    "GiaBan": 30000,
+    "SoLuongTonKho": 100
+  },
+  {
+    "MaSP": "SP021",
+    "TenSP": "Mì Hảo Hảo",
+    "DonViTinh": "Thùng",
+    "GiaBan": 120000,
+    "SoLuongTonKho": 200
+  },
+  {
+    "MaSP": "SP022",
+    "TenSP": "Phô mai Con Bò Cười",
+    "DonViTinh": "Hộp 16",
+    "GiaBan": 50000,
+    "SoLuongTonKho": 90
+  },
+  {
+    "MaSP": "SP023",
+    "TenSP": "Bánh Chocopie",
+    "DonViTinh": "Hộp 12",
+    "GiaBan": 52000,
+    "SoLuongTonKho": 110
+  },
+  {
+    "MaSP": "SP024",
+    "TenSP": "Xúc xích CP",
+    "DonViTinh": "Gói 500g",
+    "GiaBan": 65000,
+    "SoLuongTonKho": 80
+  },
+  {
+    "MaSP": "SP025",
+    "TenSP": "Nấm kim châm",
+    "DonViTinh": "Gói",
+    "GiaBan": 15000,
+    "SoLuongTonKho": 50
+  },
+  {
+    "MaSP": "SP026",
+    "TenSP": "Rau muống VietGap",
+    "DonViTinh": "Bó",
+    "GiaBan": 18000,
+    "SoLuongTonKho": 40
+  },
+  {
+    "MaSP": "SP027",
+    "TenSP": "Cải thìa VietGap",
+    "DonViTinh": "Bó",
+    "GiaBan": 20000,
+    "SoLuongTonKho": 40
+  },
+  {
+    "MaSP": "SP028",
+    "TenSP": "Nước rửa chén Sunlight",
+    "DonViTinh": "Chai",
+    "GiaBan": 38000,
+    "SoLuongTonKho": 130
+  },
+  {
+    "MaSP": "SP029",
+    "TenSP": "Sữa đặc Ông Thọ",
+    "DonViTinh": "Lon",
+    "GiaBan": 23000,
+    "SoLuongTonKho": 200
+  },
+  {
+    "MaSP": "SP030",
+    "TenSP": "Bơ lạt Anchor",
+    "DonViTinh": "Khối 200g",
+    "GiaBan": 85000,
+    "SoLuongTonKho": 50
+  },
+  {
+    "MaSP": "SP031",
+    "TenSP": "Sản phẩm tự động 31",
+    "DonViTinh": "Cái",
+    "GiaBan": 31000,
+    "SoLuongTonKho": 62
+  },
+  {
+    "MaSP": "SP032",
+    "TenSP": "Sản phẩm tự động 32",
+    "DonViTinh": "Cái",
+    "GiaBan": 32000,
+    "SoLuongTonKho": 64
+  },
+  {
+    "MaSP": "SP033",
+    "TenSP": "Sản phẩm tự động 33",
+    "DonViTinh": "Cái",
+    "GiaBan": 33000,
+    "SoLuongTonKho": 66
+  },
+  {
+    "MaSP": "SP034",
+    "TenSP": "Sản phẩm tự động 34",
+    "DonViTinh": "Cái",
+    "GiaBan": 34000,
+    "SoLuongTonKho": 68
+  },
+  {
+    "MaSP": "SP035",
+    "TenSP": "Sản phẩm tự động 35",
+    "DonViTinh": "Cái",
+    "GiaBan": 35000,
+    "SoLuongTonKho": 70
+  },
+  {
+    "MaSP": "SP036",
+    "TenSP": "Sản phẩm tự động 36",
+    "DonViTinh": "Cái",
+    "GiaBan": 36000,
+    "SoLuongTonKho": 72
+  },
+  {
+    "MaSP": "SP037",
+    "TenSP": "Sản phẩm tự động 37",
+    "DonViTinh": "Cái",
+    "GiaBan": 37000,
+    "SoLuongTonKho": 74
+  },
+  {
+    "MaSP": "SP038",
+    "TenSP": "Sản phẩm tự động 38",
+    "DonViTinh": "Cái",
+    "GiaBan": 38000,
+    "SoLuongTonKho": 76
+  },
+  {
+    "MaSP": "SP039",
+    "TenSP": "Sản phẩm tự động 39",
+    "DonViTinh": "Cái",
+    "GiaBan": 39000,
+    "SoLuongTonKho": 78
+  },
+  {
+    "MaSP": "SP040",
+    "TenSP": "Sản phẩm tự động 40",
+    "DonViTinh": "Cái",
+    "GiaBan": 40000,
+    "SoLuongTonKho": 80
+  },
+  {
+    "MaSP": "SP041",
+    "TenSP": "Sản phẩm tự động 41",
+    "DonViTinh": "Cái",
+    "GiaBan": 41000,
+    "SoLuongTonKho": 82
+  },
+  {
+    "MaSP": "SP042",
+    "TenSP": "Sản phẩm tự động 42",
+    "DonViTinh": "Cái",
+    "GiaBan": 42000,
+    "SoLuongTonKho": 84
+  },
+  {
+    "MaSP": "SP043",
+    "TenSP": "Sản phẩm tự động 43",
+    "DonViTinh": "Cái",
+    "GiaBan": 43000,
+    "SoLuongTonKho": 86
+  },
+  {
+    "MaSP": "SP044",
+    "TenSP": "Sản phẩm tự động 44",
+    "DonViTinh": "Cái",
+    "GiaBan": 44000,
+    "SoLuongTonKho": 88
+  },
+  {
+    "MaSP": "SP045",
+    "TenSP": "Sản phẩm tự động 45",
+    "DonViTinh": "Cái",
+    "GiaBan": 45000,
+    "SoLuongTonKho": 90
+  },
+  {
+    "MaSP": "SP046",
+    "TenSP": "Sản phẩm tự động 46",
+    "DonViTinh": "Cái",
+    "GiaBan": 46000,
+    "SoLuongTonKho": 92
+  },
+  {
+    "MaSP": "SP047",
+    "TenSP": "Sản phẩm tự động 47",
+    "DonViTinh": "Cái",
+    "GiaBan": 47000,
+    "SoLuongTonKho": 94
+  },
+  {
+    "MaSP": "SP048",
+    "TenSP": "Sản phẩm tự động 48",
+    "DonViTinh": "Cái",
+    "GiaBan": 48000,
+    "SoLuongTonKho": 96
+  },
+  {
+    "MaSP": "SP049",
+    "TenSP": "Sản phẩm tự động 49",
+    "DonViTinh": "Cái",
+    "GiaBan": 49000,
+    "SoLuongTonKho": 98
+  },
+  {
+    "MaSP": "SP050",
+    "TenSP": "Sản phẩm tự động 50",
+    "DonViTinh": "Cái",
+    "GiaBan": 50000,
+    "SoLuongTonKho": 100
+  },
+  {
+    "MaSP": "SP051",
+    "TenSP": "Sản phẩm tự động 51",
+    "DonViTinh": "Cái",
+    "GiaBan": 51000,
+    "SoLuongTonKho": 102
+  },
+  {
+    "MaSP": "SP052",
+    "TenSP": "Sản phẩm tự động 52",
+    "DonViTinh": "Cái",
+    "GiaBan": 52000,
+    "SoLuongTonKho": 104
+  },
+  {
+    "MaSP": "SP053",
+    "TenSP": "Sản phẩm tự động 53",
+    "DonViTinh": "Cái",
+    "GiaBan": 53000,
+    "SoLuongTonKho": 106
+  },
+  {
+    "MaSP": "SP054",
+    "TenSP": "Sản phẩm tự động 54",
+    "DonViTinh": "Cái",
+    "GiaBan": 54000,
+    "SoLuongTonKho": 108
+  },
+  {
+    "MaSP": "SP055",
+    "TenSP": "Sản phẩm tự động 55",
+    "DonViTinh": "Cái",
+    "GiaBan": 55000,
+    "SoLuongTonKho": 110
+  },
+  {
+    "MaSP": "SP056",
+    "TenSP": "Sản phẩm tự động 56",
+    "DonViTinh": "Cái",
+    "GiaBan": 56000,
+    "SoLuongTonKho": 112
+  },
+  {
+    "MaSP": "SP057",
+    "TenSP": "Sản phẩm tự động 57",
+    "DonViTinh": "Cái",
+    "GiaBan": 57000,
+    "SoLuongTonKho": 114
+  },
+  {
+    "MaSP": "SP058",
+    "TenSP": "Sản phẩm tự động 58",
+    "DonViTinh": "Cái",
+    "GiaBan": 58000,
+    "SoLuongTonKho": 116
+  },
+  {
+    "MaSP": "SP059",
+    "TenSP": "Sản phẩm tự động 59",
+    "DonViTinh": "Cái",
+    "GiaBan": 59000,
+    "SoLuongTonKho": 118
+  },
+  {
+    "MaSP": "SP060",
+    "TenSP": "Sản phẩm tự động 60",
+    "DonViTinh": "Cái",
+    "GiaBan": 60000,
+    "SoLuongTonKho": 120
+  },
+  {
+    "MaSP": "SP061",
+    "TenSP": "Sản phẩm tự động 61",
+    "DonViTinh": "Cái",
+    "GiaBan": 61000,
+    "SoLuongTonKho": 122
+  },
+  {
+    "MaSP": "SP062",
+    "TenSP": "Sản phẩm tự động 62",
+    "DonViTinh": "Cái",
+    "GiaBan": 62000,
+    "SoLuongTonKho": 124
+  },
+  {
+    "MaSP": "SP063",
+    "TenSP": "Sản phẩm tự động 63",
+    "DonViTinh": "Cái",
+    "GiaBan": 63000,
+    "SoLuongTonKho": 126
+  },
+  {
+    "MaSP": "SP064",
+    "TenSP": "Sản phẩm tự động 64",
+    "DonViTinh": "Cái",
+    "GiaBan": 64000,
+    "SoLuongTonKho": 128
+  },
+  {
+    "MaSP": "SP065",
+    "TenSP": "Sản phẩm tự động 65",
+    "DonViTinh": "Cái",
+    "GiaBan": 65000,
+    "SoLuongTonKho": 130
+  },
+  {
+    "MaSP": "SP066",
+    "TenSP": "Sản phẩm tự động 66",
+    "DonViTinh": "Cái",
+    "GiaBan": 66000,
+    "SoLuongTonKho": 132
+  },
+  {
+    "MaSP": "SP067",
+    "TenSP": "Sản phẩm tự động 67",
+    "DonViTinh": "Cái",
+    "GiaBan": 67000,
+    "SoLuongTonKho": 134
+  },
+  {
+    "MaSP": "SP068",
+    "TenSP": "Sản phẩm tự động 68",
+    "DonViTinh": "Cái",
+    "GiaBan": 68000,
+    "SoLuongTonKho": 136
+  },
+  {
+    "MaSP": "SP069",
+    "TenSP": "Sản phẩm tự động 69",
+    "DonViTinh": "Cái",
+    "GiaBan": 69000,
+    "SoLuongTonKho": 138
+  },
+  {
+    "MaSP": "SP070",
+    "TenSP": "Sản phẩm tự động 70",
+    "DonViTinh": "Cái",
+    "GiaBan": 70000,
+    "SoLuongTonKho": 140
+  },
+  {
+    "MaSP": "SP071",
+    "TenSP": "Sản phẩm tự động 71",
+    "DonViTinh": "Cái",
+    "GiaBan": 71000,
+    "SoLuongTonKho": 142
+  },
+  {
+    "MaSP": "SP072",
+    "TenSP": "Sản phẩm tự động 72",
+    "DonViTinh": "Cái",
+    "GiaBan": 72000,
+    "SoLuongTonKho": 144
+  },
+  {
+    "MaSP": "SP073",
+    "TenSP": "Sản phẩm tự động 73",
+    "DonViTinh": "Cái",
+    "GiaBan": 73000,
+    "SoLuongTonKho": 146
+  },
+  {
+    "MaSP": "SP074",
+    "TenSP": "Sản phẩm tự động 74",
+    "DonViTinh": "Cái",
+    "GiaBan": 74000,
+    "SoLuongTonKho": 148
+  },
+  {
+    "MaSP": "SP075",
+    "TenSP": "Sản phẩm tự động 75",
+    "DonViTinh": "Cái",
+    "GiaBan": 75000,
+    "SoLuongTonKho": 150
+  },
+  {
+    "MaSP": "SP076",
+    "TenSP": "Sản phẩm tự động 76",
+    "DonViTinh": "Cái",
+    "GiaBan": 76000,
+    "SoLuongTonKho": 152
+  },
+  {
+    "MaSP": "SP077",
+    "TenSP": "Sản phẩm tự động 77",
+    "DonViTinh": "Cái",
+    "GiaBan": 77000,
+    "SoLuongTonKho": 154
+  },
+  {
+    "MaSP": "SP078",
+    "TenSP": "Sản phẩm tự động 78",
+    "DonViTinh": "Cái",
+    "GiaBan": 78000,
+    "SoLuongTonKho": 156
+  },
+  {
+    "MaSP": "SP079",
+    "TenSP": "Sản phẩm tự động 79",
+    "DonViTinh": "Cái",
+    "GiaBan": 79000,
+    "SoLuongTonKho": 158
+  },
+  {
+    "MaSP": "SP080",
+    "TenSP": "Sản phẩm tự động 80",
+    "DonViTinh": "Cái",
+    "GiaBan": 80000,
+    "SoLuongTonKho": 160
+  },
+  {
+    "MaSP": "SP081",
+    "TenSP": "Sản phẩm tự động 81",
+    "DonViTinh": "Cái",
+    "GiaBan": 81000,
+    "SoLuongTonKho": 162
+  },
+  {
+    "MaSP": "SP082",
+    "TenSP": "Sản phẩm tự động 82",
+    "DonViTinh": "Cái",
+    "GiaBan": 82000,
+    "SoLuongTonKho": 164
+  },
+  {
+    "MaSP": "SP083",
+    "TenSP": "Sản phẩm tự động 83",
+    "DonViTinh": "Cái",
+    "GiaBan": 83000,
+    "SoLuongTonKho": 166
+  },
+  {
+    "MaSP": "SP084",
+    "TenSP": "Sản phẩm tự động 84",
+    "DonViTinh": "Cái",
+    "GiaBan": 84000,
+    "SoLuongTonKho": 168
+  },
+  {
+    "MaSP": "SP085",
+    "TenSP": "Sản phẩm tự động 85",
+    "DonViTinh": "Cái",
+    "GiaBan": 85000,
+    "SoLuongTonKho": 170
+  },
+  {
+    "MaSP": "SP086",
+    "TenSP": "Sản phẩm tự động 86",
+    "DonViTinh": "Cái",
+    "GiaBan": 86000,
+    "SoLuongTonKho": 172
+  },
+  {
+    "MaSP": "SP087",
+    "TenSP": "Sản phẩm tự động 87",
+    "DonViTinh": "Cái",
+    "GiaBan": 87000,
+    "SoLuongTonKho": 174
+  },
+  {
+    "MaSP": "SP088",
+    "TenSP": "Sản phẩm tự động 88",
+    "DonViTinh": "Cái",
+    "GiaBan": 88000,
+    "SoLuongTonKho": 176
+  },
+  {
+    "MaSP": "SP089",
+    "TenSP": "Sản phẩm tự động 89",
+    "DonViTinh": "Cái",
+    "GiaBan": 89000,
+    "SoLuongTonKho": 178
+  },
+  {
+    "MaSP": "SP090",
+    "TenSP": "Sản phẩm tự động 90",
+    "DonViTinh": "Cái",
+    "GiaBan": 90000,
+    "SoLuongTonKho": 180
+  },
+  {
+    "MaSP": "SP091",
+    "TenSP": "Sản phẩm tự động 91",
+    "DonViTinh": "Cái",
+    "GiaBan": 91000,
+    "SoLuongTonKho": 182
+  },
+  {
+    "MaSP": "SP092",
+    "TenSP": "Sản phẩm tự động 92",
+    "DonViTinh": "Cái",
+    "GiaBan": 92000,
+    "SoLuongTonKho": 184
+  },
+  {
+    "MaSP": "SP093",
+    "TenSP": "Sản phẩm tự động 93",
+    "DonViTinh": "Cái",
+    "GiaBan": 93000,
+    "SoLuongTonKho": 186
+  },
+  {
+    "MaSP": "SP094",
+    "TenSP": "Sản phẩm tự động 94",
+    "DonViTinh": "Cái",
+    "GiaBan": 94000,
+    "SoLuongTonKho": 188
+  },
+  {
+    "MaSP": "SP095",
+    "TenSP": "Sản phẩm tự động 95",
+    "DonViTinh": "Cái",
+    "GiaBan": 95000,
+    "SoLuongTonKho": 190
+  },
+  {
+    "MaSP": "SP096",
+    "TenSP": "Sản phẩm tự động 96",
+    "DonViTinh": "Cái",
+    "GiaBan": 96000,
+    "SoLuongTonKho": 192
+  },
+  {
+    "MaSP": "SP097",
+    "TenSP": "Sản phẩm tự động 97",
+    "DonViTinh": "Cái",
+    "GiaBan": 97000,
+    "SoLuongTonKho": 194
+  },
+  {
+    "MaSP": "SP098",
+    "TenSP": "Sản phẩm tự động 98",
+    "DonViTinh": "Cái",
+    "GiaBan": 98000,
+    "SoLuongTonKho": 196
+  },
+  {
+    "MaSP": "SP099",
+    "TenSP": "Sản phẩm tự động 99",
+    "DonViTinh": "Cái",
+    "GiaBan": 99000,
+    "SoLuongTonKho": 198
+  },
+  {
+    "MaSP": "SP100",
+    "TenSP": "Sản phẩm tự động 100",
+    "DonViTinh": "Cái",
+    "GiaBan": 100000,
+    "SoLuongTonKho": 200
+  }
+]
