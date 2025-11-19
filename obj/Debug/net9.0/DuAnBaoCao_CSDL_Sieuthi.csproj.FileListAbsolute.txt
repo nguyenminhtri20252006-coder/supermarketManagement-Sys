@@ -28,3 +28,18 @@ E:\HocTapCucCManh\supermarketmanagement-sys\obj\Debug\net9.0\refint\DuAnBaoCao_C
 E:\HocTapCucCManh\supermarketmanagement-sys\obj\Debug\net9.0\DuAnBaoCao_CSDL_Sieuthi.pdb
 E:\HocTapCucCManh\supermarketmanagement-sys\obj\Debug\net9.0\DuAnBaoCao_CSDL_Sieuthi.genruntimeconfig.cache
 E:\HocTapCucCManh\supermarketmanagement-sys\obj\Debug\net9.0\ref\DuAnBaoCao_CSDL_Sieuthi.dll
+D:\csharpspace\Prj SuperMarketManageSys\v4\supermarketmanagement-sys\bin\Debug\net9.0\DuAnBaoCao_CSDL_Sieuthi.exe
+D:\csharpspace\Prj SuperMarketManageSys\v4\supermarketmanagement-sys\bin\Debug\net9.0\DuAnBaoCao_CSDL_Sieuthi.deps.json
+D:\csharpspace\Prj SuperMarketManageSys\v4\supermarketmanagement-sys\bin\Debug\net9.0\DuAnBaoCao_CSDL_Sieuthi.runtimeconfig.json
+D:\csharpspace\Prj SuperMarketManageSys\v4\supermarketmanagement-sys\bin\Debug\net9.0\DuAnBaoCao_CSDL_Sieuthi.dll
+D:\csharpspace\Prj SuperMarketManageSys\v4\supermarketmanagement-sys\bin\Debug\net9.0\DuAnBaoCao_CSDL_Sieuthi.pdb
+D:\csharpspace\Prj SuperMarketManageSys\v4\supermarketmanagement-sys\obj\Debug\net9.0\DuAnBaoCao_CSDL_Sieuthi.GeneratedMSBuildEditorConfig.editorconfig
+D:\csharpspace\Prj SuperMarketManageSys\v4\supermarketmanagement-sys\obj\Debug\net9.0\DuAnBaoCao_CSDL_Sieuthi.AssemblyInfoInputs.cache
+D:\csharpspace\Prj SuperMarketManageSys\v4\supermarketmanagement-sys\obj\Debug\net9.0\DuAnBaoCao_CSDL_Sieuthi.AssemblyInfo.cs
+D:\csharpspace\Prj SuperMarketManageSys\v4\supermarketmanagement-sys\obj\Debug\net9.0\DuAnBaoCao_CSDL_Sieuthi.csproj.CoreCompileInputs.cache
+D:\csharpspace\Prj SuperMarketManageSys\v4\supermarketmanagement-sys\obj\Debug\net9.0\DuAnBaoCao_CSDL_Sieuthi.sourcelink.json
+D:\csharpspace\Prj SuperMarketManageSys\v4\supermarketmanagement-sys\obj\Debug\net9.0\DuAnBaoCao_CSDL_Sieuthi.dll
+D:\csharpspace\Prj SuperMarketManageSys\v4\supermarketmanagement-sys\obj\Debug\net9.0\refint\DuAnBaoCao_CSDL_Sieuthi.dll
+D:\csharpspace\Prj SuperMarketManageSys\v4\supermarketmanagement-sys\obj\Debug\net9.0\DuAnBaoCao_CSDL_Sieuthi.pdb
+D:\csharpspace\Prj SuperMarketManageSys\v4\supermarketmanagement-sys\obj\Debug\net9.0\DuAnBaoCao_CSDL_Sieuthi.genruntimeconfig.cache
+D:\csharpspace\Prj SuperMarketManageSys\v4\supermarketmanagement-sys\obj\Debug\net9.0\ref\DuAnBaoCao_CSDL_Sieuthi.dll

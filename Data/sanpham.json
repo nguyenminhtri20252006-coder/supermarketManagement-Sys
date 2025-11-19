@@ -4,7 +4,7 @@
     "TenSP": "Sữa tươi Vinamilk 1L",
     "DonViTinh": "Hộp",
     "GiaBan": 35000,
-    "SoLuongTonKho": 150
+    "SoLuongTonKho": 180
   },
   {
     "MaSP": "SP002",
@@ -116,7 +116,7 @@
     "TenSP": "Sữa chua Vinamilk",
     "DonViTinh": "Lốc 4",
     "GiaBan": 22000,
-    "SoLuongTonKho": 300
+    "SoLuongTonKho": 299
   },
   {
     "MaSP": "SP018",
@@ -277,7 +277,7 @@
     "TenSP": "Sản phẩm tự động 40",
     "DonViTinh": "Cái",
     "GiaBan": 40000,
-    "SoLuongTonKho": 80
+    "SoLuongTonKho": 79
   },
   {
     "MaSP": "SP041",
@@ -452,7 +452,7 @@
     "TenSP": "Sản phẩm tự động 65",
     "DonViTinh": "Cái",
     "GiaBan": 65000,
-    "SoLuongTonKho": 130
+    "SoLuongTonKho": 129
   },
   {
     "MaSP": "SP066",
